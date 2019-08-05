@@ -49,6 +49,7 @@ namespace LesApp1
             };
             #endregion
 
+            #region Введення даних
             for (int i = 0; i < workers.Length; i++)
             {
                 // введення даних
@@ -91,7 +92,8 @@ namespace LesApp1
                 Console.Write(workers[i].Year);
 
                 Console.WriteLine();
-            }
+            } 
+            #endregion
 
             // Сортування
             workers = workers.OrderBy(t => t.FullName).ToArray();
@@ -146,7 +148,6 @@ namespace LesApp1
                 return DateTime.Now;
             }
         }
-
 
         /// <summary>
         /// Метод виходу або повторення методу Main()
